@@ -1,0 +1,224 @@
+// Colors
+$white: #ffff;
+// Fonts
+$font_noto_sans: "Noto Sans JP";
+
+
+// Navigation
+nav {
+    position: absolute;
+    z-index: 3;
+    background-color: $white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    overflow-x: hidden;
+    .logo {
+        width: 100px;
+        display: block;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+// PC Background
+.pc_background {
+    position: relative;
+    // Background Img
+    .bg_img {
+        position: fixed;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../img/background.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    // LIFECARD Fave Img
+    .lc_fave_text_img {
+        position: fixed;
+        z-index: 3;
+        top: 40%;
+        left: 5%;
+        width: 23vw;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // Card Img
+    .card_img {
+        position: fixed;
+        img {
+            max-width: 100%;
+        }
+    }
+    .card_pink {
+        width: 5.75vw;
+        top: 10%;
+        left: 8%;
+        transform: rotate(-30deg);
+    }
+    .card_purple {
+        width: 5.5vw;
+        top: 24%;
+        left: 23%;
+        transform: rotate(-15deg);
+    }
+    .card_black {
+        width: 5.75vw;
+        top: 67%;
+        left: 2%;
+        transform: rotate(15deg);
+    }
+    .card_yellow {
+        width: 7vw;
+        top: 80.5%;
+        left: 16%;
+        transform: rotate(-15deg);
+    }
+    .card_orange {
+        width: 6vw;
+        top: 10%;
+        right: 16%;
+        transform: rotate(34deg);
+    }
+    .card_blue {
+        width: 6vw;
+        top: 30%;
+        right: 8%;
+        transform: rotate(-42deg);
+    }
+    .card_green {
+        width: 6vw;
+        top: 48%;
+        right: 22%;
+        transform: rotate(17deg);
+    }
+    .card_white {
+        width: 7vw;
+        top: 59%;
+        right: 8%;
+        transform: rotate(-30deg);
+    }
+    .card_red {
+        width: 6vw;
+        top: 77%;
+        right: 19%;
+        transform: rotate(10deg);
+    }
+
+    // Bottom Wave
+    .wave_bg {
+        position: fixed;
+        bottom: 0;
+        z-index: 3;
+        width: 100vw;
+        height: 140px;
+        background-image: url('../img/bottom_wave.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .btn_area {
+        position: fixed;
+        z-index: 10;
+        bottom: 25px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .bottom_btn {
+            width: 400px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .pc_background {
+        .lc_fave_text_img {
+            left: 1%;
+            width: 21vw;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .pc_background {
+        .lc_fave_text_img {
+            display: none;
+        }
+        .card_pink {
+            width: 9vw;
+            top: 10%;
+            left: 6%;
+            transform: rotate(-30deg);
+        }
+        .card_purple {
+            width: 9vw;
+            top: 33%;
+            left: 9%;
+            transform: rotate(-15deg);
+        }
+        .card_black {
+            width: 9vw;
+            top: 58%;
+            left: 3%;
+            transform: rotate(15deg);
+        }
+        .card_yellow {
+            width: 9vw;
+            top: 80.5%;
+            left: 10%;
+            transform: rotate(-15deg);
+        }
+        .card_orange {
+            width: 9vw;
+            top: 10%;
+            right: 12%;
+            transform: rotate(34deg);
+        }
+        .card_blue {
+            width: 9vw;
+            top: 30%;
+            right: 10%;
+            transform: rotate(-42deg);
+        }
+        .card_green {
+            width: 9vw;
+            top: 50%;
+            right: 16%;
+            transform: rotate(17deg);
+        }
+        .card_white {
+            width: 9vw;
+            top: 65%;
+            right: 9%;
+            transform: rotate(-30deg);
+        }
+        .card_red {
+            width: 9vw;
+            top: 80%;
+            right: 15%;
+            transform: rotate(10deg);
+        }
+    }
+}
+
+// SP Area
+.sp_area {
+    position: relative;
+    top: 75px;
+    z-index: 2;
+    margin: 0 auto;
+    width: 560px;
+    height: auto;
+    background-color: #F2F2F2;
+}
