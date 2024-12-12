@@ -9,6 +9,7 @@ nav {
   align-items: center;
   padding: 0 25px;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 nav .logo {
   width: 100px;
