@@ -19,6 +19,14 @@ nav .logo img {
   max-width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  nav {
+    height: 50px;
+  }
+  nav .logo {
+    width: 62px;
+  }
+}
 .pc_background {
   position: relative;
 }
@@ -192,6 +200,11 @@ nav .logo img {
     transform: rotate(10deg);
   }
 }
+@media screen and (max-width: 600px) {
+  .pc_background {
+    display: none;
+  }
+}
 .sp_area {
   position: relative;
   top: 75px;
@@ -200,4 +213,15 @@ nav .logo img {
   width: 560px;
   height: auto;
   background-color: #F2F2F2;
+}
+.sp_area .top_section {
+  position: relative;
+}
+.sp_area .top_section .main_bg {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+.sp_area .top_section .main_bg img {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */
