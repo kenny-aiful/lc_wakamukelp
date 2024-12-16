@@ -1,5 +1,7 @@
 // Colors
 $white: #ffff;
+$pink: #FF7F9D;
+$dark_blue: #3E3E6A;
 // Fonts
 $font_noto_sans: "Noto Sans JP";
 
@@ -233,16 +235,332 @@ nav {
 .sp_area {
     position: relative;
     top: 75px;
-    z-index: 2;
     margin: 0 auto;
-    width: 560px;
+    width: 22vw;
+    max-width: 560px;
+    min-width: 500px;
     height: auto;
     background-color: #F2F2F2;
-    .top_section {
+    .section_1 {
         position: relative;
+        z-index: 1;
         .main_bg {
             position: relative;
-            z-index: 0;
+            z-index: 1;
+            width: 100%;
+            background-image: url('../img/sp_bg.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 104vh;
+            background-position: center;
+            .top_text {
+                position: absolute;
+                z-index: 2;
+                width: fit-content;
+                margin: 17px 16px 0;
+                left: 0;
+                right: 0;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .hand_card {
+                margin: 0 auto;
+                position: relative;
+                top: 8vh;
+                overflow: hidden;
+                img {
+                    max-width: 100%;
+                    object-fit: cover;
+                    opacity: 0;
+                    transition: opacity 1s ease-in-out;
+                }
+                .visible {
+                    opacity: 1;
+                }
+                
+            }
+            .main_title {
+                position: absolute;
+                top: 55vh;
+                margin: 0 auto;
+                padding: 0 16px;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .section_2 {
+        position: relative;
+        top: 100px;
+        width: 100%;
+        top: -20vh;
+        z-index: 2;
+        .section_background {
+            position: relative;
+            width: 100%;
+            height: 2000px;
+            height: fit-content;
+            overflow: hidden;
+            padding-bottom: 63px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: linear-gradient(to bottom, #E9FFFD, #DBEEF2, #FFCACB, #6953AE);
+                z-index: 0;
+                border-top-left-radius: 270px;
+                border-top-right-radius: 270px;
+                box-shadow: 0px 2px 0px #00009A inset; /* Adds a top border effect */
+            }
+            .section_content {
+                position: relative;
+                z-index: 2;
+                .title_2 {
+                    position: relative;
+                    margin-top: 10vh;
+                    width: 70%;
+                    margin: 13vh auto 0;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .title_desc {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 19px;
+                    margin-top: 24px;
+                    line-height: 1.5;
+                    margin-bottom: 50px;
+                }
+                .content_part1 {
+                    position: relative;
+                    .catch_img {
+                        display: flex;
+                        justify-content: right;
+                        position: relative;
+                        padding-left: 13px;
+                        right: -3px;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    .bubble_text {
+                        position: absolute;
+                        top: 21%;
+                        left: 21%;
+                        width: 100%;
+                        height: 100px;
+                        background-image: url('../img/text_bubble_1.webp');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        .text {
+                            position: absolute;
+                            left: 40%;
+                            top: 21%;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 1.5;
+                        }
+                    }
+                    &::before {
+                        content: '';
+                        background-image: url('../img/accent_1.webp');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 100%;
+                        height: 55px;
+                        display: block;
+                        z-index: 1;
+                        position: absolute;
+                        top: -24%;
+                        left: 37%;
+                    }
+                }
+                .content_part2 {
+                    position: relative;
+                    margin-top: 70px;
+                    .catch_img {
+                        display: flex;
+                        justify-content: right;
+                        padding-right: 10px;
+                        position: relative;
+                        img {
+                            max-width: 93%;
+                        }
+                    }
+                    .bubble_text {
+                        position: absolute;
+                        top: 21%;
+                        right: 30%;
+                        width: 100%;
+                        height: 100px;
+                        background-image: url('../img/text_bubble_2.webp');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        .text {
+                            position: absolute;
+                            left: 40%;
+                            top: 33%;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 1.5;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        background-image: url('../img/accent_3.webp');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 100%;
+                        height: 30px;
+                        display: block;
+                        z-index: 0;
+                        position: absolute;
+                        top: -23%;
+                        left: 44%;
+                    }
+                    &::before {
+                        content: '';
+                        background-image: url('../img/accent_2.webp');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 100%;
+                        height: 90px;
+                        display: block;
+                        z-index: 0;
+                        position: absolute;
+                        top: -14%;
+                        left: 39%;
+                    }
+                }
+                .content_part3 {
+                    position: relative;
+                    margin-top: 70px;
+                    .catch_img {
+                        display: flex;
+                        justify-content: left;
+                        padding-right: 12px;
+                        position: relative;
+                        left: -4px;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    .bubble_text {
+                        position: absolute;
+                        top: 47%;
+                        left: 29%;
+                        width: 100%;
+                        height: 114px;
+                        background-image: url('../img/text_bubble_1.webp');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        .text {
+                            position: absolute;
+                            left: 42%;
+                            top: 25%;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 1.5;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        background-image: url('../img/accent_3.webp');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 100%;
+                        height: 30px;
+                        display: block;
+                        z-index: 0;
+                        position: absolute;
+                        top: -23%;
+                        left: 44%;
+                    }
+                    &::before {
+                        content: '';
+                        background-image: url('../img/accent_2.webp');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 100%;
+                        height: 90px;
+                        display: block;
+                        z-index: 0;
+                        position: absolute;
+                        top: -14%;
+                        left: 39%;
+                    }
+                }
+                .content_part4 {
+                    margin-top: 50px;
+                    position: relative;
+                    .star_box_1 {
+                        position: absolute;
+                        z-index: 2;
+                        right: 0;
+                        width: 80%;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    .text_box_wrap {
+                        z-index: 1;
+                        padding-top: 105px;
+                        .text_box_img {
+                            position: relative;
+                            width: 100%;
+                            margin: 0 auto;
+                            padding: 0 16px;
+                            box-sizing: border-box;
+                            img {
+                                max-width: 100%;
+                            }
+                            .text_desc {
+                                position: absolute;
+                                width: 77%;
+                                top: 50%;
+                                left: 46%;
+                                transform: translate(-50%, -50%);
+                                .desc_title {
+                                    font-size: 30px;
+                                    font-weight: 600;
+                                    margin-bottom: 20px;
+                                    color: $dark_blue;
+                                }
+                                .desc_text {
+                                    position: relative;
+                                    left: 19px;
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    color: $dark_blue;
+                                    line-height: 1.5;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .star_box_2 {
+            position: relative;
+            z-index: 2;
+            right: 0;
+            top: -20px;
             width: 100%;
             img {
                 max-width: 100%;
@@ -253,5 +571,8 @@ nav {
 
 @media screen and (max-width: 600px) {
     .sp_area {
+        top: 50px;
+        width: 100%;
+        min-width: 100%;
     }   
 }
