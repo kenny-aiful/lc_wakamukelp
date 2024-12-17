@@ -27,4 +27,34 @@ imageElement.src = images[currentIndex];
 imageElement.classList.add("visible");
 
 // Change the image every 2 seconds
-setInterval(changeImage, 2000); 
+setInterval(changeImage, 4000); 
+
+
+// For color buttons
+const buttons = document.getElementsByClassName("color_button");
+const cardImage = document.querySelector(".card_img_select img");
+
+const imagePaths = {
+    blue: "../assets/img/blue.webp",
+    purple: "../assets/img/purple.webp",
+    pink: "../assets/img/pink.webp",
+    red: "../assets/img/red.webp",
+    yellow: "../assets/img/yellow.webp",
+    orange: "../assets/img/orange.webp",
+    green: "../assets/img/green.webp",
+    black: "../assets/img/black.webp",
+    white: "../assets/img/white.webp"
+};
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function () {
+        for (let j = 0; j < buttons.length; j++) {
+            buttons[j].classList.remove("clicked");
+        }
+        buttons[i].classList.toggle("clicked");
+
+        const colorClass = buttons[i].querySelector(".inner_button").classList[1];
+
+        cardImage.src = imagePaths[colorClass];
+    });
+}
