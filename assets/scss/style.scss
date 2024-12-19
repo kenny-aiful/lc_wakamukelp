@@ -1119,6 +1119,186 @@ nav {
                         }
                     }
                 }
+                .faq_button {
+                    width: 70%;
+                    height: 50px;
+                    border: 2px solid #E78EA3;
+                    border-radius: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $white;
+                    text-decoration: none;
+                    margin: 32px auto 0;
+                    p {
+                        font-size: 14px;
+                        font-weight: 800;
+                        font-family: $font_noto_sans;
+                        color: #E78EA3;
+                        text-decoration: none;
+                    }
+                }
+
+                .card_info_box {
+                    margin-top: 32px;
+                    .question_box {
+                        cursor: pointer;
+                        position: relative;
+                        background-color: $pink;
+                        border-radius: 20px;
+                        padding: 22px 50px 22px 45px;
+                        transition: .3s;
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            font-size: 14px;
+                            font-family: $font_noto_sans;
+                            font-weight: 600;
+                            color: $white;
+                            line-height: 1.5;
+                        }
+                        .mark {
+                            position: absolute;
+                            right: 16px;
+                            top: 32px;
+                            .line_1 {
+                                position: absolute;
+                                width: 14px;
+                                height: 2px;
+                                background-color: $white;
+                            }
+                            .line_2 {
+                                width: 14px;
+                                height: 2px;
+                                background-color: $white;
+                                transform: rotate(90deg);
+                                transition: .3s;
+                            }
+                            .open {
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }
+
+                    .card_info_table {
+                        margin-top: 16px;
+                        .row {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            .info_1 {
+                                width: 30%;
+                                background-color: $pink;
+                                border: 1px solid #E6C1C7;
+                                border-bottom: none;
+                                border-right: none;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 20px 16px;
+                                .title_text {
+                                    font-family: $font_noto_sans;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    color: $white;
+                                    text-align: center;
+                                    line-height: 1.5;
+                                }
+                            }
+                            .info_2 {
+                                width: 70%;
+                                background-color: $white;
+                                border: 1px solid #E6C1C7;
+                                border-bottom: none;
+                                padding: 20px 16px;
+                                .img_wrap {
+                                    display: flex;
+                                    flex-direction: row;
+                                    .info_img {
+                                        width: 70px;
+                                        height: 23px;
+                                        img {
+                                            max-width: 100%;
+                                            max-height: 100%;
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+                                .plain_text {
+                                    font-size: 14px;
+                                    line-height: 1.5;
+                                    color: $dark_blue;
+                                }
+                                .small_text {
+                                    margin-top: 5px;
+                                    font-size: 12px;
+                                    line-height: 1.25;
+                                    color: $dark_blue;
+                                }
+                                ul {
+                                    li {
+                                        line-height: 1.5;
+                                        color: $dark_blue;
+                                        margin-bottom: 5px;
+                                    }
+                                    .text_dot {
+                                        font-size: 14px;
+                                        position: relative;
+                                        padding-left: 8px;
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            top: 8px;
+                                            left: 0px;
+                                            display: block;
+                                            width: 4px;
+                                            height: 4px;
+                                            border-radius: 100%;
+                                            background-color: #FF7F9D;
+                                        }
+                                        a {
+                                            color: $dark_blue;
+                                            font-weight: 600;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .text_kome {
+                                        font-size: 12px;
+                                        line-height: 1.5;
+                                        position: relative;
+                                        padding-left: 10px;
+                                        margin-top: 5px;
+                                        &::before {
+                                            content: '※';
+                                            position: absolute;
+                                            top: 0px;
+                                            left: -4px;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:first-child {
+                                .info_1 {
+                                    border-top-left-radius: 20px;
+                                }
+                                .info_2 {
+                                    border-top-right-radius: 20px;
+                                }
+                            }
+                            &:last-child {
+                                .info_1 {
+                                    border-bottom: 1px solid #E6C1C7;
+                                    border-bottom-left-radius: 20px;
+                                }
+                                .info_2 {
+                                    border-bottom: 1px solid #E6C1C7;
+                                    border-bottom-right-radius: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

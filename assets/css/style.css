@@ -242,7 +242,6 @@ nav .logo img {
 .sp_area .section_1 .main_bg .top_text {
   position: absolute;
   z-index: 2;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 17px 16px 0;
   left: 0;
@@ -261,8 +260,7 @@ nav .logo img {
 }
 .sp_area .section_1 .main_bg .hand_card img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -288,7 +286,6 @@ nav .logo img {
 .sp_area .section_2 .section_background {
   position: relative;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   padding-bottom: 90px;
@@ -622,7 +619,6 @@ nav .logo img {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 220px;
 }
@@ -800,7 +796,6 @@ nav .logo img {
 }
 .sp_area .section_4 .main_bg {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   background-image: linear-gradient(to bottom, rgba(247, 254, 255, 0.25), rgba(219, 242, 255, 0.6)), url("../img/dots_bg_2.webp");
   background-size: 120%;
@@ -1028,7 +1023,6 @@ nav .logo img {
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .answer_box {
   position: relative;
-  height: -moz-fit-content;
   height: fit-content;
   background-color: white;
   border-bottom-left-radius: 18px;
@@ -1050,6 +1044,178 @@ nav .logo img {
   font-size: 18px;
   font-weight: 600;
   color: #E78EA3;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .faq_button {
+  width: 70%;
+  height: 50px;
+  border: 2px solid #E78EA3;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-decoration: none;
+  margin: 32px auto 0;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .faq_button p {
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Noto Sans JP";
+  color: #E78EA3;
+  text-decoration: none;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box {
+  margin-top: 32px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .question_box {
+  cursor: pointer;
+  position: relative;
+  background-color: #FF7F9D;
+  border-radius: 20px;
+  padding: 22px 50px 22px 45px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .question_box p {
+  font-size: 14px;
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  color: white;
+  line-height: 1.5;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .question_box .mark {
+  position: absolute;
+  right: 16px;
+  top: 32px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .question_box .mark .line_1 {
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: white;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .question_box .mark .line_2 {
+  width: 14px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .question_box .mark .open {
+  transform: rotate(0deg);
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table {
+  margin-top: 16px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_1 {
+  width: 30%;
+  background-color: #FF7F9D;
+  border: 1px solid #E6C1C7;
+  border-bottom: none;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_1 .title_text {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 {
+  width: 70%;
+  background-color: white;
+  border: 1px solid #E6C1C7;
+  border-bottom: none;
+  padding: 20px 16px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 .img_wrap {
+  display: flex;
+  flex-direction: row;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 .img_wrap .info_img {
+  width: 70px;
+  height: 23px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 .img_wrap .info_img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 .plain_text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #3E3E6A;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 .small_text {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #3E3E6A;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 ul li {
+  line-height: 1.5;
+  color: #3E3E6A;
+  margin-bottom: 5px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 ul .text_dot {
+  font-size: 14px;
+  position: relative;
+  padding-left: 8px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 ul .text_dot::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #FF7F9D;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 ul .text_dot a {
+  color: #3E3E6A;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 ul .text_kome {
+  font-size: 12px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 ul .text_kome::before {
+  content: "※";
+  position: absolute;
+  top: 0px;
+  left: -4px;
+  font-size: 12px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row:first-child .info_1 {
+  border-top-left-radius: 20px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row:first-child .info_2 {
+  border-top-right-radius: 20px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row:last-child .info_1 {
+  border-bottom: 1px solid #E6C1C7;
+  border-bottom-left-radius: 20px;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row:last-child .info_2 {
+  border-bottom: 1px solid #E6C1C7;
+  border-bottom-right-radius: 20px;
 }
 .sp_area .btn_area {
   position: fixed;
