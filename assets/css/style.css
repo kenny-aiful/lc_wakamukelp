@@ -242,6 +242,7 @@ nav .logo img {
 .sp_area .section_1 .main_bg .top_text {
   position: absolute;
   z-index: 2;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 17px 16px 0;
   left: 0;
@@ -260,7 +261,8 @@ nav .logo img {
 }
 .sp_area .section_1 .main_bg .hand_card img {
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -286,6 +288,7 @@ nav .logo img {
 .sp_area .section_2 .section_background {
   position: relative;
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   padding-bottom: 90px;
@@ -619,6 +622,7 @@ nav .logo img {
   background-size: cover;
   background-position: center;
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 220px;
 }
@@ -796,6 +800,7 @@ nav .logo img {
 }
 .sp_area .section_4 .main_bg {
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   background-image: linear-gradient(to bottom, rgba(247, 254, 255, 0.25), rgba(219, 242, 255, 0.6)), url("../img/dots_bg_2.webp");
   background-size: 120%;
@@ -969,6 +974,7 @@ nav .logo img {
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box {
   border: 2px solid #FF7F9D;
   border-radius: 20px;
+  margin-bottom: 16px;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .question_box {
   cursor: pointer;
@@ -984,10 +990,11 @@ nav .logo img {
   font-family: "Noto Sans JP";
   font-weight: 600;
   color: white;
+  line-height: 1.5;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .question_box::before {
   position: absolute;
-  top: 18px;
+  top: 24px;
   left: 16px;
   content: "Q";
   font-size: 18px;
@@ -997,7 +1004,7 @@ nav .logo img {
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .question_box .mark {
   position: absolute;
   right: 16px;
-  top: 29px;
+  top: 32px;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .question_box .mark .line_1 {
   position: absolute;
@@ -1021,6 +1028,7 @@ nav .logo img {
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .answer_box {
   position: relative;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: white;
   border-bottom-left-radius: 18px;
@@ -1032,6 +1040,16 @@ nav .logo img {
   font-weight: 400;
   color: #3E3E6A;
   padding: 22px 50px 22px 45px;
+  line-height: 1.5;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .faq_box .answer_box::before {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  content: "A";
+  font-size: 18px;
+  font-weight: 600;
+  color: #E78EA3;
 }
 .sp_area .btn_area {
   position: fixed;

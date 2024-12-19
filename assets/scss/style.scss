@@ -1042,6 +1042,7 @@ nav {
                 .faq_box {
                     border: 2px solid $pink;
                     border-radius: 20px;
+                    margin-bottom: 16px;
                     .question_box {
                         cursor: pointer;
                         position: relative;
@@ -1055,10 +1056,11 @@ nav {
                             font-family: $font_noto_sans;
                             font-weight: 600;
                             color: $white;
+                            line-height: 1.5;
                         }
                         &::before {
                             position: absolute;
-                            top: 18px;
+                            top: 24px;
                             left: 16px;
                             content: 'Q';
                             font-size: 18px;
@@ -1068,7 +1070,7 @@ nav {
                         .mark {
                             position: absolute;
                             right: 16px;
-                            top: 29px;
+                            top: 32px;
                             .line_1 {
                                 position: absolute;
                                 width: 14px;
@@ -1104,6 +1106,16 @@ nav {
                             font-weight: 400;
                             color: $dark_blue;
                             padding: 22px 50px 22px 45px;
+                            line-height: 1.5;
+                        }
+                        &::before {
+                            position: absolute;
+                            top: 24px;
+                            left: 16px;
+                            content: 'A';
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #E78EA3;
                         }
                     }
                 }
