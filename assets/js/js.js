@@ -1,14 +1,14 @@
 // Card Animation
 const images = [
-    "../assets/img/hand_blue.webp",
-    "../assets/img/hand_green.webp",
-    "../assets/img/hand_pink.webp",
-    "../assets/img/hand_orange.webp",
-    "../assets/img/hand_purple.webp",
-    "../assets/img/hand_red.webp",
-    "../assets/img/hand_yellow.webp",
-    "../assets/img/hand_black.webp",
-    "../assets/img/hand_white.webp",
+    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_blue.webp",
+    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_green.webp",
+    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_pink.webp",
+    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_orange.webp",
+    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_purple.webp",
+    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_red.webp",
+    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_yellow.webp",
+    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_black.webp",
+    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_white.webp",
 ];
 
 let currentIndex = 0;
@@ -37,15 +37,15 @@ const buttons = document.getElementsByClassName("color_button");
 const cardImage = document.querySelector(".card_img_select img");
 
 const imagePaths = {
-    blue: "../assets/img/blue.webp",
-    purple: "../assets/img/purple.webp",
-    pink: "../assets/img/pink.webp",
-    red: "../assets/img/red.webp",
-    yellow: "../assets/img/yellow.webp",
-    orange: "../assets/img/orange.webp",
-    green: "../assets/img/green.webp",
-    black: "../assets/img/black.webp",
-    white: "../assets/img/white.webp"
+    blue: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/blue.webp",
+    purple: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/purple.webp",
+    pink: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/pink.webp",
+    red: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/red.webp",
+    yellow: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/yellow.webp",
+    orange: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/orange.webp",
+    green: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/green.webp",
+    black: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/black.webp",
+    white: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/white.webp"
 };
 
 for (let i = 0; i < buttons.length; i++) {
@@ -95,3 +95,23 @@ document.querySelectorAll('.faq_box').forEach(box => {
     });
 });
 
+// Accordion
+document.querySelectorAll('.card_info_box').forEach(box => {
+    const questionbox2 = box.querySelector('.question_box');
+    const cardinfobox = box.querySelector('.card_info_table');
+    const mark = box.querySelector('.line_2'); 
+
+    cardinfobox.style.maxHeight = "0";
+    cardinfobox.style.overflow = "hidden";
+    cardinfobox.style.transition = "max-height 0.3s ease";
+
+    questionbox2.addEventListener('click', () => {
+        if(cardinfobox.style.maxHeight === "0px") {
+            cardinfobox.style.maxHeight = cardinfobox.scrollHeight + "px";
+            mark.classList.add('open');
+        } else {
+            cardinfobox.style.maxHeight = "0";
+            mark.classList.remove('open');
+        }
+    });
+});

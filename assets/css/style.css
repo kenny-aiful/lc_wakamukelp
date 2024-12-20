@@ -137,8 +137,8 @@ nav .logo img {
 }
 @media screen and (max-width: 1300px) {
   .pc_background .lc_fave_text_img {
-    left: 1%;
-    width: 21vw;
+    left: 3%;
+    width: 25%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -201,8 +201,10 @@ nav .logo img {
   }
 }
 @media screen and (max-width: 600px) {
-  .pc_background {
-    display: none;
+  .pc_background .wave_bg {
+    background-image: url("../img/wave_sp.webp");
+    height: 110px;
+    width: 100%;
   }
 }
 .sp_area {
@@ -211,7 +213,23 @@ nav .logo img {
   margin: 0 auto;
   width: 425px;
   height: auto;
-  background-color: #FFDED9;
+  background-color: #857CB2;
+}
+.sp_area .head_text_section {
+  background-color: #00009A;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.sp_area .head_text_section p {
+  font-size: 12px;
+  font-family: "Noto Sans JP", serif;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  padding: 8px 0 10px;
 }
 .sp_area .section_1 {
   position: relative;
@@ -221,23 +239,23 @@ nav .logo img {
   position: relative;
   z-index: 1;
   width: 100%;
-  background-image: url("../img/sp_bg_layer1.webp");
+  background-image: url("../img/sp_bg_layer3.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 878px;
+  height: 650px;
   background-position: center;
 }
 .sp_area .section_1 .main_bg::after {
   content: "";
-  background-image: url("../img/sp_bg_layer2.webp");
+  background-image: url("../img/sp_bg_layer4.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   z-index: 1;
-  bottom: 0;
+  bottom: -270px;
   width: 100%;
-  height: 429px;
+  height: 555px;
 }
 .sp_area .section_1 .main_bg .top_text {
   position: absolute;
@@ -253,9 +271,9 @@ nav .logo img {
 .sp_area .section_1 .main_bg .hand_card {
   margin: 0 auto;
   position: relative;
-  width: 65%;
+  width: 55%;
   z-index: 0;
-  top: 10%;
+  top: 14%;
   overflow: hidden;
 }
 .sp_area .section_1 .main_bg .hand_card img {
@@ -270,7 +288,7 @@ nav .logo img {
 .sp_area .section_1 .main_bg .main_title {
   position: absolute;
   z-index: 5;
-  bottom: 20%;
+  bottom: 8%;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -279,7 +297,7 @@ nav .logo img {
 }
 .sp_area .section_2 {
   position: relative;
-  top: -100px;
+  top: 0px;
   width: 100%;
   z-index: 2;
 }
@@ -459,7 +477,7 @@ nav .logo img {
 }
 .sp_area .section_2 .section_background .section_content .content_part3 .bubble_text {
   position: absolute;
-  top: 47%;
+  top: 39%;
   left: 29%;
   width: 100%;
   height: 114px;
@@ -597,7 +615,7 @@ nav .logo img {
 }
 .sp_area .section_3 {
   position: relative;
-  top: -195px;
+  top: -35px;
   overflow: hidden;
 }
 .sp_area .section_3::before {
@@ -620,7 +638,7 @@ nav .logo img {
   background-position: center;
   width: 100%;
   height: fit-content;
-  padding-bottom: 220px;
+  padding-bottom: 170px;
 }
 .sp_area .section_3 .bg_pattern::after {
   content: "";
@@ -636,7 +654,7 @@ nav .logo img {
   content: "";
   position: absolute;
   z-index: 3;
-  bottom: 180px;
+  bottom: 120px;
   left: 40px;
   background-image: url("../img/accent_5.webp");
   background-position: center;
@@ -656,7 +674,7 @@ nav .logo img {
   margin-left: 5px;
   font-size: 14px;
   font-weight: 500;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", serif;
   color: #3E3E6A;
 }
 .sp_area .section_3 .bg_pattern .section_content .fave_img {
@@ -707,7 +725,7 @@ nav .logo img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 75%;
+  width: 76%;
 }
 .sp_area .section_3 .bg_pattern .section_content .card_selection_space .color_button_wrap ul .color_button {
   width: 44px;
@@ -770,7 +788,7 @@ nav .logo img {
 .sp_area .section_4 {
   overflow: hidden;
   position: relative;
-  top: -300px;
+  top: -100px;
 }
 .sp_area .section_4::before {
   content: "";
@@ -850,7 +868,7 @@ nav .logo img {
 }
 .sp_area .section_4 .main_bg .content_wrap .content_3 .box_wrap .content_desc ul li {
   font-size: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   line-height: 1.5;
   color: #1E1E4E;
   padding-left: 15px;
@@ -864,7 +882,7 @@ nav .logo img {
 }
 .sp_area .section_5 {
   position: relative;
-  top: -300px;
+  top: -100px;
   background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 235, 240));
 }
 .sp_area .section_5 .content_wrap {
@@ -928,7 +946,7 @@ nav .logo img {
   align-items: center;
 }
 .sp_area .section_5 .content_wrap .caution_box_wrap .box_title p {
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", serif;
   font-weight: 600;
   color: white;
   font-size: 18px;
@@ -942,7 +960,7 @@ nav .logo img {
 .sp_area .section_5 .content_wrap .caution_box_wrap .box_content ul .caution_text {
   font-size: 14px;
   line-height: 1.5;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   position: relative;
   padding-left: 3px;
 }
@@ -962,34 +980,34 @@ nav .logo img {
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_title {
   font-size: 28px;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", serif;
   font-weight: 600;
   margin-bottom: 32px;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box {
   border: 2px solid #FF7F9D;
-  border-radius: 20px;
+  border-radius: 34px;
   margin-bottom: 16px;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .question_box {
   cursor: pointer;
   position: relative;
   background-color: #FF7F9D;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   padding: 22px 50px 22px 45px;
   transition: 0.3s;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .question_box p {
   font-size: 14px;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", serif;
   font-weight: 600;
   color: white;
   line-height: 1.5;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .question_box::before {
   position: absolute;
-  top: 24px;
+  top: 23px;
   left: 16px;
   content: "Q";
   font-size: 18px;
@@ -1018,19 +1036,19 @@ nav .logo img {
   transform: rotate(0deg);
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .closed_box {
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .answer_box {
   position: relative;
   height: fit-content;
   background-color: white;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .answer_box p {
   font-size: 14px;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", serif;
   font-weight: 400;
   color: #3E3E6A;
   padding: 22px 50px 22px 45px;
@@ -1038,7 +1056,7 @@ nav .logo img {
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .answer_box::before {
   position: absolute;
-  top: 24px;
+  top: 23px;
   left: 16px;
   content: "A";
   font-size: 18px;
@@ -1056,13 +1074,20 @@ nav .logo img {
   background-color: white;
   text-decoration: none;
   margin: 32px auto 0;
+  transition: 0.3s;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_button p {
   font-size: 14px;
   font-weight: 800;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", serif;
   color: #E78EA3;
   text-decoration: none;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .faq_button:hover {
+  background-color: #E78EA3;
+}
+.sp_area .section_5 .content_wrap .faq_wrap .faq_button:hover p {
+  color: white;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .card_info_box {
   margin-top: 32px;
@@ -1071,7 +1096,7 @@ nav .logo img {
   cursor: pointer;
   position: relative;
   background-color: #FF7F9D;
-  border-radius: 20px;
+  border-radius: 34px;
   padding: 22px 50px 22px 45px;
   transition: 0.3s;
   display: flex;
@@ -1079,7 +1104,7 @@ nav .logo img {
 }
 .sp_area .section_5 .content_wrap .faq_wrap .card_info_box .question_box p {
   font-size: 14px;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", serif;
   font-weight: 600;
   color: white;
   line-height: 1.5;
@@ -1125,7 +1150,7 @@ nav .logo img {
   padding: 20px 16px;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_1 .title_text {
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", serif;
   font-weight: 600;
   font-size: 14px;
   color: white;
@@ -1217,13 +1242,31 @@ nav .logo img {
   border-bottom: 1px solid #E6C1C7;
   border-bottom-right-radius: 20px;
 }
+.sp_area .section_5 .content_wrap .banner_wrap {
+  display: block;
+  width: 100%;
+  background-color: white;
+  margin-top: 20px;
+}
+.sp_area .section_5 .content_wrap .banner_wrap .banner_img {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.sp_area .section_5 .content_wrap .banner_wrap .banner_img img {
+  max-width: 100%;
+}
+.sp_area .section_5 .content_wrap .banner_wrap .banner_img:hover {
+  opacity: 0.65;
+}
 .sp_area .btn_area {
   position: fixed;
   z-index: 10;
   top: auto;
   left: 50%;
-  bottom: 0%;
+  bottom: -1%;
   transform: translate(-50%, -25%);
+  transition: 0.3s;
 }
 .sp_area .btn_area .bottom_btn {
   display: block;
@@ -1232,16 +1275,37 @@ nav .logo img {
 .sp_area .btn_area .bottom_btn img {
   max-width: 100%;
 }
+.sp_area .btn_area:hover {
+  opacity: 0.75;
+}
+.sp_area footer {
+  position: relative;
+  bottom: 50px;
+  padding: 0 16px 80px;
+}
+.sp_area footer p {
+  color: white;
+  font-family: "Noto Sans JP", serif;
+  font-weight: 400;
+}
+.sp_area footer .company_name {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.sp_area footer .copyright {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.sp_area footer .logo {
+  width: 23%;
+}
+.sp_area footer .logo img {
+  max-width: 100%;
+}
 
 @media screen and (max-width: 1536px) {
   .sp_area {
     top: 50px;
-  }
-  .sp_area .section_1 .main_bg {
-    height: 828px;
-  }
-  .sp_area .section_1 .main_bg .main_title {
-    bottom: 28%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1249,5 +1313,40 @@ nav .logo img {
     top: 50px;
     width: 100%;
     min-width: 100%;
+  }
+  .sp_area .section_1 .main_bg {
+    height: 69dvh;
+  }
+  .sp_area .section_1 .main_bg .main_title {
+    bottom: 5dvh;
+  }
+  .sp_area .section_1 .main_bg .hand_card {
+    width: 55%;
+    top: 10%;
+  }
+  .sp_area .section_1 .main_bg::after {
+    background-image: url("../img/sp_bg_layer5.webp");
+    height: 65dvh;
+    bottom: -250px;
+  }
+  .sp_area .section_3 .bg_pattern .section_content .card_selection_space .color_button_wrap ul {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .sp_area .section_1 .main_bg {
+    height: 80vh;
+  }
+  .sp_area .section_1 .main_bg .main_title {
+    bottom: 8dvh;
+  }
+  .sp_area .section_1 .main_bg::after {
+    bottom: -170px;
+  }
+  .sp_area .btn_area {
+    bottom: -2%;
+  }
+  .sp_area .section_3 .bg_pattern .section_content .card_selection_space .color_button_wrap ul {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

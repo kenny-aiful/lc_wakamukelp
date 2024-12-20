@@ -1,6 +1,9 @@
 // Colors
 $white: #ffff;
 $pink: #FF7F9D;
+$pink_2: #E78EA3;
+$purple: #857CB2;
+$deep_blue: #00009A;
 $dark_blue: #3E3E6A;
 $card_blue: #5DA1C6;
 $card_purple: #8179A5;
@@ -13,7 +16,7 @@ $card_black: #605850;
 $card_white: #F3F3F3;
 
 // Fonts
-$font_noto_sans: "Noto Sans JP";
+$font_noto_sans: "Noto Sans JP", serif;
 
 
 // Navigation
@@ -171,8 +174,8 @@ nav {
 @media screen and (max-width: 1300px) {
     .pc_background {
         .lc_fave_text_img {
-            left: 1%;
-            width: 21vw;
+            left: 3%;
+            width: 25%;
         }
     }
 }
@@ -239,7 +242,11 @@ nav {
 }
 @media screen and (max-width: 600px) {
     .pc_background {
-        display: none;
+        .wave_bg {
+            background-image: url('../img/wave_sp.webp');
+            height: 110px;
+            width: 100%;
+        }
     }
 }
 
@@ -250,7 +257,25 @@ nav {
     margin: 0 auto;
     width: 425px;
     height: auto;
-    background-color: #FFDED9;
+    background-color: $purple;
+
+    .head_text_section {
+        background-color: $deep_blue;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        
+        p {
+            font-size: 12px;
+            font-family: $font_noto_sans;
+            font-weight: 500;
+            color: $white;
+            text-align: center;
+            line-height: 1.5;
+            padding: 8px 0 10px;
+        }
+    }
     
     .section_1 {
         position: relative;
@@ -261,23 +286,23 @@ nav {
             position: relative;
             z-index: 1;
             width: 100%;
-            background-image: url('../img/sp_bg_layer1.webp');
+            background-image: url('../img/sp_bg_layer3.webp');
             background-repeat: no-repeat;
             background-size: cover;
-            height: 878px;
+            height: 650px;
             background-position: center;
             // Background Layer 2
             &::after {
                 content: '';
-                background-image: url('../img/sp_bg_layer2.webp');
+                background-image: url('../img/sp_bg_layer4.webp');
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
                 position: absolute;
                 z-index: 1;
-                bottom: 0;
+                bottom: -270px;
                 width: 100%;
-                height: 429px;
+                height: 555px;
             }
             .top_text {
                 position: absolute;
@@ -293,9 +318,9 @@ nav {
             .hand_card {
                 margin: 0 auto;
                 position: relative;
-                width: 65%;
+                width: 55%;
                 z-index: 0;
-                top: 10%;
+                top: 14%;
                 overflow: hidden;
                 img {
                     max-width: 100%;
@@ -311,7 +336,7 @@ nav {
             .main_title {
                 position: absolute;
                 z-index: 5;
-                bottom: 20%;
+                bottom: 8%;
                 margin: 0 auto;
                 padding: 0 16px;
                 img {
@@ -324,7 +349,7 @@ nav {
 
     .section_2 {
         position: relative;
-        top: -100px;
+        top: 0px;
         width: 100%;
         z-index: 2;
         .section_background {
@@ -500,7 +525,7 @@ nav {
                     }
                     .bubble_text {
                         position: absolute;
-                        top: 47%;
+                        top: 39%;
                         left: 29%;
                         width: 100%;
                         height: 114px;
@@ -646,7 +671,7 @@ nav {
 
     .section_3 {
         position: relative;
-        top: -195px;
+        top: -35px;
         overflow: hidden;
         // Accent Parts
         &::before {
@@ -670,7 +695,7 @@ nav {
             background-position: center;
             width: 100%;
             height: fit-content;
-            padding-bottom: 220px;
+            padding-bottom: 170px;
             // Gradient On top of it
             &::after {
                 content: '';
@@ -687,7 +712,7 @@ nav {
                 content: '';
                 position: absolute;
                 z-index: 3;
-                bottom: 180px;
+                bottom: 120px;
                 left: 40px;
                 background-image: url('../img/accent_5.webp');
                 background-position: center;
@@ -758,7 +783,7 @@ nav {
                             flex-direction: row;
                             flex-wrap: wrap;
                             justify-content: center;
-                            width: 75%;
+                            width: 76%;
                             .color_button {
                                 width: 44px;
                                 height: 44px;
@@ -827,7 +852,7 @@ nav {
     .section_4 {
         overflow: hidden;
         position: relative;
-        top: -300px;
+        top: -100px;
         &::before {
             content: '';
             background-image: url('../img/accent_1.webp');
@@ -911,7 +936,7 @@ nav {
                             ul {
                                 li {
                                     font-size: 12px;
-                                    margin-bottom: 16px;
+                                    margin-bottom: 10px;
                                     line-height: 1.5;
                                     color: #1E1E4E;
                                     padding-left: 15px;
@@ -933,7 +958,7 @@ nav {
 
     .section_5 {
         position: relative;
-        top: -300px;
+        top: -100px;
         background-image: 
                 linear-gradient(to bottom, rgba(255, 255, 255, 1 ), rgba(255, 235, 240, 1));
         .content_wrap {
@@ -1010,7 +1035,7 @@ nav {
                         .caution_text {
                             font-size: 14px;
                             line-height: 1.5;
-                            margin-bottom: 24px;
+                            margin-bottom: 16px;
                             position: relative;
                             padding-left: 3px;
                             &:last-child {
@@ -1041,14 +1066,14 @@ nav {
                 }
                 .faq_box {
                     border: 2px solid $pink;
-                    border-radius: 20px;
+                    border-radius: 34px;
                     margin-bottom: 16px;
                     .question_box {
                         cursor: pointer;
                         position: relative;
                         background-color: $pink;
-                        border-top-left-radius: 16px;
-                        border-top-right-radius: 16px;
+                        border-top-left-radius: 30px;
+                        border-top-right-radius: 30px;
                         padding: 22px 50px 22px 45px;
                         transition: .3s;
                         p {
@@ -1060,7 +1085,7 @@ nav {
                         }
                         &::before {
                             position: absolute;
-                            top: 24px;
+                            top: 23px;
                             left: 16px;
                             content: 'Q';
                             font-size: 18px;
@@ -1090,16 +1115,16 @@ nav {
                         }
                     }
                     .closed_box {
-                        border-bottom-left-radius: 14px;
-                        border-bottom-right-radius: 14px;
+                        border-bottom-left-radius: 30px;
+                        border-bottom-right-radius: 30px;
                     }
                     
                     .answer_box {
                         position: relative;
                         height: fit-content;
                         background-color: $white;
-                        border-bottom-left-radius: 18px;
-                        border-bottom-right-radius: 18px;
+                        border-bottom-left-radius: 32px;
+                        border-bottom-right-radius: 32px;
                         p {
                             font-size: 14px;
                             font-family: $font_noto_sans;
@@ -1110,19 +1135,19 @@ nav {
                         }
                         &::before {
                             position: absolute;
-                            top: 24px;
+                            top: 23px;
                             left: 16px;
                             content: 'A';
                             font-size: 18px;
                             font-weight: 600;
-                            color: #E78EA3;
+                            color: $pink_2;
                         }
                     }
                 }
                 .faq_button {
                     width: 70%;
                     height: 50px;
-                    border: 2px solid #E78EA3;
+                    border: 2px solid $pink_2;
                     border-radius: 100px;
                     display: flex;
                     justify-content: center;
@@ -1130,12 +1155,19 @@ nav {
                     background-color: $white;
                     text-decoration: none;
                     margin: 32px auto 0;
+                    transition: .3s;
                     p {
                         font-size: 14px;
                         font-weight: 800;
                         font-family: $font_noto_sans;
-                        color: #E78EA3;
+                        color: $pink_2;
                         text-decoration: none;
+                    }
+                    &:hover {
+                        background-color: $pink_2;
+                        p {
+                            color: $white;
+                        }
                     }
                 }
 
@@ -1145,7 +1177,7 @@ nav {
                         cursor: pointer;
                         position: relative;
                         background-color: $pink;
-                        border-radius: 20px;
+                        border-radius: 34px;
                         padding: 22px 50px 22px 45px;
                         transition: .3s;
                         display: flex;
@@ -1300,6 +1332,25 @@ nav {
                     }
                 }
             }
+
+            .banner_wrap {
+                display: block;
+                width: 100%;
+                background-color: $white;
+                margin-top: 20px;
+                .banner_img {
+                    display: block;
+                    width: 100%;
+                    transition: .3s;
+                    img {
+                        max-width: 100%;
+                    }
+                    &:hover {
+                        opacity: .65;
+                    }
+                }
+                
+            }
         }
     }
 
@@ -1308,11 +1359,40 @@ nav {
         z-index: 10;
         top: auto;
         left: 50%;
-        bottom: 0%;
+        bottom: -1%;
         transform: translate(-50%, -25%);
+        transition: .3s;
         .bottom_btn {
             display: block;
             width: 350px;
+            img {
+                max-width: 100%;
+            }
+        }
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+
+    footer {
+        position: relative;
+        bottom: 50px;
+        padding: 0 16px 80px;
+        p {
+            color: $white;
+            font-family: $font_noto_sans;
+            font-weight: 400;
+        }
+        .company_name {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .copyright {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .logo {
+            width: 23%;
             img {
                 max-width: 100%;
             }
@@ -1325,9 +1405,7 @@ nav {
         top: 50px;
         .section_1 {
             .main_bg {
-                height: 828px;
                 .main_title {
-                    bottom: 28%;
                 }
             }
         }
@@ -1338,5 +1416,69 @@ nav {
         top: 50px;
         width: 100%;
         min-width: 100%;
+        .section_1 {
+            .main_bg {
+                height: 69dvh;
+                .main_title {
+                    bottom: 5dvh;
+                }
+                .hand_card {
+                    width: 55%;
+                    top: 10%;
+                }
+                &::after {
+                    background-image: url('../img/sp_bg_layer5.webp');
+                    height: 65dvh;
+                    bottom: -250px;
+                }
+            }
+        }
+
+        .section_3 {
+            .bg_pattern {
+                .section_content {
+                    .card_selection_space {
+                        .color_button_wrap {
+                            ul {
+                                width: 83%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }   
+}
+
+@media screen and (max-width: 375px) {
+    .sp_area {
+        .section_1 {
+            .main_bg {
+                height: 80vh;
+                .main_title {
+                    bottom: 8dvh;
+                }
+                &::after {
+                    bottom: -170px;
+                }
+            }
+        }
+        .btn_area {
+            bottom: -2%;
+        }
+
+        .section_3 {
+            .bg_pattern {
+                .section_content {
+                    .card_selection_space {
+                        .color_button_wrap {
+                            ul {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -19,6 +19,11 @@
     <meta property="og:image" content="...">
     <meta name="robots" content="noindex">
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
     <!-- カノニカル -->
     <link rel="canonical" href=".../">
     <link rel="shortcut icon" href="/app-files/img/symbol/favicon.ico">
@@ -29,7 +34,7 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="/lp/js/takeOverParam.js"></script>
-    
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -38,9 +43,9 @@
 
 <body>
     <nav>
-        <a class="logo" href="#">
+        <div class="logo">
             <img src="assets/img/logo.webp" alt="ライフカード">
-        </a>
+        </div>
     </nav>
     <div class="pc_background">
         <!-- Background Img -->
@@ -66,24 +71,27 @@
         </div>
         <div class="card_img card_orange">
             <img src="assets/img/orange.webp" alt="">
-         </div>
-         <div class="card_img card_blue">
+        </div>
+        <div class="card_img card_blue">
             <img src="assets/img/blue.webp" alt="">
-         </div>
-         <div class="card_img card_green">
+        </div>
+        <div class="card_img card_green">
             <img src="assets/img/green.webp" alt="">
-         </div>
-         <div class="card_img card_white">
+        </div>
+        <div class="card_img card_white">
             <img src="assets/img/white.webp" alt="">
-         </div>
-         <div class="card_img card_red">
+        </div>
+        <div class="card_img card_red">
             <img src="assets/img/red.webp" alt="">
-         </div>
+        </div>
 
         <!-- Bottom Wave -->
         <div class="wave_bg"></div>
     </div>
     <div class="sp_area">
+        <div class="head_text_section">
+            <p>カードのお届けは3月を予定しております<br>ご確認のうえお申込みください</p>
+        </div>
         <div class="section_1">
             <div class="main_bg">
                 <div class="top_text">
@@ -152,7 +160,7 @@
                                     <img src="assets/img/accent_6.webp" alt="">
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -160,7 +168,7 @@
             <div class="star_box_2">
                 <img src="assets/img/star_box_left.webp" alt="">
             </div>
-            
+
         </div>
         <div class="section_3">
             <div class="bg_pattern">
@@ -254,7 +262,8 @@
                                     <ul>
                                         <li>LIFECARD Fave決済限定</li>
                                         <li>条件を満たしていない場合など、ポイント進呈の対象外となる場合があります。</li>
-                                        <li>本サービスはFrich株式会社（以下「Frich」という）のサービスを利用します。本カードに切替の場合、サービス提供のためFrichにて会員登録処理を行います。</li>
+                                        <li>本サービスはFrich株式会社（以下「Frich」という）のサービスを利用します。本カードに切替の場合、サービス提供のためFrichにて会員登録処理を行います。
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -327,7 +336,7 @@
                     <h2 class="faq_title">FAQ</h2>
 
                     <!-- Question 1 -->
-                     <div class="faq_box">
+                    <div class="faq_box">
                         <div class="question_box">
                             <p>登録情報やポイント関連は引き継がれますか？</p>
                             <div class="mark">
@@ -338,10 +347,10 @@
                         <div class="answer_box">
                             <p>全てそのまま引き継がれます。</p>
                         </div>
-                     </div>
+                    </div>
 
-                     <!-- Question 2 -->
-                     <div class="faq_box">
+                    <!-- Question 2 -->
+                    <div class="faq_box">
                         <div class="question_box">
                             <p>切替した場合、旧カードはいつまで使えますか？</p>
                             <div class="mark">
@@ -352,10 +361,10 @@
                         <div class="answer_box">
                             <p>新しいカードがお手元に届くまでご利用いただけます。</p>
                         </div>
-                     </div>
+                    </div>
 
-                     <!-- Question 3 -->
-                     <div class="faq_box">
+                    <!-- Question 3 -->
+                    <div class="faq_box">
                         <div class="question_box">
                             <p>学生専用カードの特典はいつまで使えますか？</p>
                             <div class="mark">
@@ -366,14 +375,14 @@
                         <div class="answer_box">
                             <p>卒業まで学生専用カードの特典はそのままご利用いただけます。</p>
                         </div>
-                     </div>
+                    </div>
 
-                     <a href="#" class="faq_button">
+                    <a href="#" class="faq_button">
                         <p>その他FAQ</p>
-                     </a>
+                    </a>
 
-                     <!-- Question 3 -->
-                     <div class="card_info_box">
+                    <!-- Card Info -->
+                    <div class="card_info_box">
                         <div class="question_box">
                             <p>クレジットカード情報を見る</p>
                             <div class="mark">
@@ -412,7 +421,7 @@
                                             <img src="assets/img/mastercard_logo.webp" alt="">
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="row">
@@ -440,21 +449,35 @@
                                 </div>
                             </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
+                <!-- Gold Card Banner -->
+                <a href="#" class="banner_wrap">
+                    <div class="banner_img">
+                        <img src="assets/img/gold_banner.webp" alt="">
+                    </div>
+
+                </a>
             </div>
         </div>
-        
+
         <!-- Bottom Fixed Button -->
         <div class="btn_area">
             <a href="" class="bottom_btn">
-                <img src="assets/img/bottom_btn.webp" alt="">
+                <img src="assets/img/bottom_btn_2.webp" alt="">
             </a>
-         </div>
-         <p>For bottom</p>
+        </div>
 
-        
-        
+        <footer>
+            <p class="company_name">ライフカード株式会社</p>
+            <p class="copyright">&copy;LIFE CARD Co., Ltd. All rights reserved.</p>
+            <div class="logo">
+                <img src="assets/img/logo_white.webp" alt="">
+            </div>
+        </footer>
+
+
+
     </div>
     <script src="assets/js/js.js"></script>
 </body>
