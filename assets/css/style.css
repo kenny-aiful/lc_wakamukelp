@@ -13,7 +13,7 @@ nav {
   box-sizing: border-box;
 }
 nav .logo {
-  width: 100px;
+  width: 7%;
   display: block;
 }
 nav .logo img {
@@ -25,7 +25,7 @@ nav .logo img {
     height: 50px;
   }
   nav .logo {
-    width: 62px;
+    width: 6%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -33,7 +33,9 @@ nav .logo img {
     height: 50px;
   }
   nav .logo {
-    width: 62px;
+    width: 25%;
+    position: relative;
+    left: -5%;
   }
 }
 .pc_background {
@@ -341,6 +343,15 @@ nav .logo img {
   line-height: 1.5;
   margin-bottom: 50px;
 }
+.sp_area .section_2 .section_background .section_content .content_part1 .bubble_text .text,
+.sp_area .section_2 .section_background .section_content .content_part2 .bubble_text .text,
+.sp_area .section_2 .section_background .section_content .content_part3 .bubble_text .text {
+  position: absolute;
+  color: #3E3E6A;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
 .sp_area .section_2 .section_background .section_content .content_part1 {
   position: relative;
 }
@@ -366,12 +377,8 @@ nav .logo img {
   background-position: center;
 }
 .sp_area .section_2 .section_background .section_content .content_part1 .bubble_text .text {
-  position: absolute;
   left: 37%;
   top: 21%;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
 }
 .sp_area .section_2 .section_background .section_content .content_part1::after {
   content: "";
@@ -408,30 +415,26 @@ nav .logo img {
 .sp_area .section_2 .section_background .section_content .content_part2 .catch_img {
   display: flex;
   justify-content: right;
-  padding-right: 10px;
+  padding-left: 16px;
   position: relative;
 }
 .sp_area .section_2 .section_background .section_content .content_part2 .catch_img img {
-  max-width: 93%;
+  max-width: 100%;
 }
 .sp_area .section_2 .section_background .section_content .content_part2 .bubble_text {
   position: absolute;
-  top: 21%;
-  right: 30%;
+  top: 16%;
+  right: 21%;
   width: 100%;
-  height: 100px;
-  background-image: url("../img/text_bubble_2.webp");
+  height: 90px;
+  background-image: url(../img/text_bubble_2.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .sp_area .section_2 .section_background .section_content .content_part2 .bubble_text .text {
-  position: absolute;
   left: 37%;
   top: 33%;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
 }
 .sp_area .section_2 .section_background .section_content .content_part2::after {
   content: "";
@@ -477,22 +480,18 @@ nav .logo img {
 }
 .sp_area .section_2 .section_background .section_content .content_part3 .bubble_text {
   position: absolute;
-  top: 39%;
+  top: 36%;
   left: 29%;
   width: 100%;
-  height: 114px;
+  height: 106px;
   background-image: url("../img/text_bubble_1.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .sp_area .section_2 .section_background .section_content .content_part3 .bubble_text .text {
-  position: absolute;
-  left: 38%;
-  top: 24%;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
+  left: 40%;
+  top: 22%;
 }
 .sp_area .section_2 .section_background .section_content .content_part3::after {
   content: "";
@@ -636,6 +635,7 @@ nav .logo img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: white;
   width: 100%;
   height: fit-content;
   padding-bottom: 170px;
@@ -647,7 +647,7 @@ nav .logo img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(171, 216, 245, 0.75));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(93, 161, 198, 0.25));
   z-index: 0;
 }
 .sp_area .section_3 .bg_pattern::before {
@@ -784,6 +784,33 @@ nav .logo img {
 }
 .sp_area .section_3 .bg_pattern .section_content .card_selection_space .color_button_wrap ul .clicked {
   border: 2px solid #FF7F9D;
+}
+.sp_area .section_3 .bg_blue:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(93, 161, 198, 0.25));
+}
+.sp_area .section_3 .bg_purple:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(129, 121, 165, 0.25));
+}
+.sp_area .section_3 .bg_pink:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(204, 146, 162, 0.25));
+}
+.sp_area .section_3 .bg_red:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(206, 107, 107, 0.25));
+}
+.sp_area .section_3 .bg_yellow:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(218, 220, 43, 0.25));
+}
+.sp_area .section_3 .bg_orange:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(216, 116, 48, 0.25));
+}
+.sp_area .section_3 .bg_green:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(79, 143, 102, 0.25));
+}
+.sp_area .section_3 .bg_black:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(96, 88, 80, 0.25));
+}
+.sp_area .section_3 .bg_white:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(243, 243, 243, 0.25));
 }
 .sp_area .section_4 {
   overflow: hidden;
@@ -1297,7 +1324,9 @@ nav .logo img {
   margin-bottom: 30px;
 }
 .sp_area footer .logo {
-  width: 23%;
+  position: relative;
+  left: -1%;
+  width: 25%;
 }
 .sp_area footer .logo img {
   max-width: 100%;
@@ -1345,6 +1374,9 @@ nav .logo img {
   }
   .sp_area .btn_area {
     bottom: -2%;
+  }
+  .sp_area .section_2 .section_background .section_content .content_part4 .text_box_wrap .text_box_img .text_desc {
+    width: 84%;
   }
   .sp_area .section_3 .bg_pattern .section_content .card_selection_space .color_button_wrap ul {
     width: 100%;

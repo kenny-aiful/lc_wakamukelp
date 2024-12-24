@@ -1,14 +1,14 @@
 // Card Animation
 const images = [
-    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_blue.webp",
-    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_green.webp",
-    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_pink.webp",
-    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_orange.webp",
-    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_purple.webp",
-    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_red.webp",
-    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_yellow.webp",
-    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_black.webp",
-    "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/hand_white.webp",
+    "../assets/img/hand_blue.webp",
+    "../assets/img/hand_green.webp",
+    "../assets/img/hand_pink.webp",
+    "../assets/img/hand_orange.webp",
+    "../assets/img/hand_purple.webp",
+    "../assets/img/hand_red.webp",
+    "../assets/img/hand_yellow.webp",
+    "../assets/img/hand_black.webp",
+    "../assets/img/hand_white.webp",
 ];
 
 let currentIndex = 0;
@@ -35,17 +35,30 @@ setInterval(changeImage, 4000);
 // For Card Selection
 const buttons = document.getElementsByClassName("color_button");
 const cardImage = document.querySelector(".card_img_select img");
+const bgPattern = document.querySelector(".bg_pattern");
 
 const imagePaths = {
-    blue: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/blue.webp",
-    purple: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/purple.webp",
-    pink: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/pink.webp",
-    red: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/red.webp",
-    yellow: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/yellow.webp",
-    orange: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/orange.webp",
-    green: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/green.webp",
-    black: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/black.webp",
-    white: "http://aiful5f.xsrv.jp/lc_fave_lp/assets/img/white.webp"
+    blue: "../assets/img/blue.webp",
+    purple: "../assets/img/purple.webp",
+    pink: "../assets/img/pink.webp",
+    red: "../assets/img/red.webp",
+    yellow: "../assets/img/yellow.webp",
+    orange: "../assets/img/orange.webp",
+    green: "../assets/img/green.webp",
+    black: "../assets/img/black.webp",
+    white: "../assets/img/white.webp"
+};
+
+const bgClasses = {
+    blue: "bg_blue",
+    purple: "bg_purple",
+    pink: "bg_pink",
+    red: "bg_red",
+    yellow: "bg_yellow",
+    orange: "bg_orange",
+    green: "bg_green",
+    black: "bg_black",
+    white: "bg_white"
 };
 
 for (let i = 0; i < buttons.length; i++) {
@@ -68,6 +81,11 @@ for (let i = 0; i < buttons.length; i++) {
                 cardImage.classList.remove("fade_in");
             }, 500)
         }, 500);
+
+        for (const bgClass in bgClasses) {
+            bgPattern.classList.remove(bgClasses[bgClass]);
+        }
+        bgPattern.classList.add(bgClasses[colorClass]);
     });
 }
 
