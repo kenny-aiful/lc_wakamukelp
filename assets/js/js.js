@@ -1,14 +1,14 @@
 // Card Animation
 const images = [
-    "../assets/img/hand_blue.webp",
-    "../assets/img/hand_green.webp",
-    "../assets/img/hand_pink.webp",
-    "../assets/img/hand_orange.webp",
-    "../assets/img/hand_purple.webp",
-    "../assets/img/hand_red.webp",
-    "../assets/img/hand_yellow.webp",
-    "../assets/img/hand_black.webp",
-    "../assets/img/hand_white.webp",
+    "../fave_invitation/assets/img/hand_blue_69280.webp",
+    "../fave_invitation/assets/img/hand_green_69270.webp",
+    "../fave_invitation/assets/img/hand_pink_69320.webp",
+    "../fave_invitation/assets/img/hand_orange_69290.webp",
+    "../fave_invitation/assets/img/hand_purple_69310.webp",
+    "../fave_invitation/assets/img/hand_red_69330.webp",
+    "../fave_invitation/assets/img/hand_yellow_69300.webp",
+    "../fave_invitation/assets/img/hand_black_68770.webp",
+    "../fave_invitation/assets/img/hand_white__68760.webp",
 ];
 
 let currentIndex = 0;
@@ -38,15 +38,15 @@ const cardImage = document.querySelector(".card_img_select img");
 const bgPattern = document.querySelector(".bg_pattern");
 
 const imagePaths = {
-    blue: "../assets/img/blue.webp",
-    purple: "../assets/img/purple.webp",
-    pink: "../assets/img/pink.webp",
-    red: "../assets/img/red.webp",
-    yellow: "../assets/img/yellow.webp",
-    orange: "../assets/img/orange.webp",
-    green: "../assets/img/green.webp",
-    black: "../assets/img/black.webp",
-    white: "../assets/img/white.webp"
+    blue: "../fave_invitation/assets/img/blue_69280.webp",
+    purple: "../fave_invitation/assets/img/purple_69310.webp",
+    pink: "../fave_invitation/assets/img/pink_69320.webp",
+    red: "../fave_invitation/assets/img/red_69330.webp",
+    yellow: "../fave_invitation/assets/img/yellow_69300.webp",
+    orange: "../fave_invitation/assets/img/orange_69290.webp",
+    green: "../fave_invitation/assets/img/green_69270.webp",
+    black: "../fave_invitation/assets/img/black_68770.webp",
+    white: "../fave_invitation/assets/img/white_68760.webp"
 };
 
 const bgClasses = {
@@ -108,27 +108,6 @@ document.querySelectorAll('.faq_box').forEach(box => {
         } else {
             answerBox.style.maxHeight = "0";
             questionBox.classList.add('closed_box');
-            mark.classList.remove('open');
-        }
-    });
-});
-
-// Accordion
-document.querySelectorAll('.card_info_box').forEach(box => {
-    const questionbox2 = box.querySelector('.question_box');
-    const cardinfobox = box.querySelector('.card_info_table');
-    const mark = box.querySelector('.line_2'); 
-
-    cardinfobox.style.maxHeight = "0";
-    cardinfobox.style.overflow = "hidden";
-    cardinfobox.style.transition = "max-height 0.3s ease";
-
-    questionbox2.addEventListener('click', () => {
-        if(cardinfobox.style.maxHeight === "0px") {
-            cardinfobox.style.maxHeight = cardinfobox.scrollHeight + "px";
-            mark.classList.add('open');
-        } else {
-            cardinfobox.style.maxHeight = "0";
             mark.classList.remove('open');
         }
     });
