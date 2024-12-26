@@ -1,14 +1,14 @@
 // Card Animation
 const images = [
-    "../fave_invitation/assets/img/hand_blue_69280.webp",
-    "../fave_invitation/assets/img/hand_green_69270.webp",
-    "../fave_invitation/assets/img/hand_pink_69320.webp",
-    "../fave_invitation/assets/img/hand_orange_69290.webp",
-    "../fave_invitation/assets/img/hand_purple_69310.webp",
-    "../fave_invitation/assets/img/hand_red_69330.webp",
-    "../fave_invitation/assets/img/hand_yellow_69300.webp",
-    "../fave_invitation/assets/img/hand_black_68770.webp",
-    "../fave_invitation/assets/img/hand_white__68760.webp",
+    "../assets/img/hand_blue_69280.webp",
+    "../assets/img/hand_green_69270.webp",
+    "../assets/img/hand_pink_69320.webp",
+    "../assets/img/hand_orange_69290.webp",
+    "../assets/img/hand_purple_69310.webp",
+    "../assets/img/hand_red_69330.webp",
+    "../assets/img/hand_yellow_69300.webp",
+    "../assets/img/hand_black_68770.webp",
+    "../assets/img/hand_white__68760.webp",
 ];
 
 let currentIndex = 0;
@@ -38,15 +38,15 @@ const cardImage = document.querySelector(".card_img_select img");
 const bgPattern = document.querySelector(".bg_pattern");
 
 const imagePaths = {
-    blue: "../fave_invitation/assets/img/blue_69280.webp",
-    purple: "../fave_invitation/assets/img/purple_69310.webp",
-    pink: "../fave_invitation/assets/img/pink_69320.webp",
-    red: "../fave_invitation/assets/img/red_69330.webp",
-    yellow: "../fave_invitation/assets/img/yellow_69300.webp",
-    orange: "../fave_invitation/assets/img/orange_69290.webp",
-    green: "../fave_invitation/assets/img/green_69270.webp",
-    black: "../fave_invitation/assets/img/black_68770.webp",
-    white: "../fave_invitation/assets/img/white_68760.webp"
+    blue: "../assets/img/blue_69280.webp",
+    purple: "../assets/img/purple_69310.webp",
+    pink: "../assets/img/pink_69320.webp",
+    red: "../assets/img/red_69330.webp",
+    yellow: "../assets/img/yellow_69300.webp",
+    orange: "../assets/img/orange_69290.webp",
+    green: "../assets/img/green_69270.webp",
+    black: "../assets/img/black_68770.webp",
+    white: "../assets/img/white_68760.webp"
 };
 
 const bgClasses = {
