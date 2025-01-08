@@ -124,11 +124,6 @@ nav .logo img {
   background-size: cover;
 }
 
-@media screen and (max-width: 1536px) {
-  .pc_background .wave_bg {
-    height: 85px;
-  }
-}
 @media screen and (max-width: 1300px) {
   .pc_background .lc_fave_text_img {
     left: 3%;
@@ -213,7 +208,6 @@ nav .logo img {
 .sp_area .head_text_section {
   background-color: #00009A;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -256,7 +250,6 @@ nav .logo img {
 .sp_area .section_1 .main_bg .top_text {
   position: absolute;
   z-index: 2;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 17px 16px 0;
   left: 0;
@@ -275,8 +268,7 @@ nav .logo img {
 }
 .sp_area .section_1 .main_bg .hand_card img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -316,7 +308,6 @@ nav .logo img {
 .sp_area .section_2 .section_background {
   position: relative;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   padding-bottom: 90px;
@@ -652,7 +643,6 @@ nav .logo img {
   background-position: center;
   background-color: white;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 170px;
 }
@@ -844,7 +834,6 @@ nav .logo img {
 }
 .sp_area .section_4 .main_bg {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   background-image: linear-gradient(to bottom, rgba(247, 254, 255, 0.25), rgba(219, 242, 255, 0.6)), url("../img/dots_bg_2.webp");
   background-size: 120%;
@@ -1108,7 +1097,6 @@ nav .logo img {
 }
 .sp_area .section_5 .content_wrap .faq_wrap .faq_box .answer_box {
   position: relative;
-  height: -moz-fit-content;
   height: fit-content;
   background-color: white;
   border-bottom-left-radius: 14px;
@@ -1217,8 +1205,7 @@ nav .logo img {
 .sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 .img_wrap .info_img img {
   max-width: 100%;
   max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .sp_area .section_5 .content_wrap .faq_wrap .card_info_box .card_info_table .row .info_2 .plain_text {
   font-size: 14px;
@@ -1355,11 +1342,6 @@ nav .logo img {
   max-width: 100%;
 }
 
-@media screen and (max-width: 1536px) {
-  .sp_area {
-    top: 50px;
-  }
-}
 @media screen and (max-width: 600px) {
   .sp_area {
     top: 50px;
@@ -1385,7 +1367,7 @@ nav .logo img {
     width: 83%;
   }
   .sp_area footer {
-    padding: 0 16px 25dvh;
+    padding: 0 16px 13dvh;
   }
 }
 @media screen and (max-width: 375px) {

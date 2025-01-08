@@ -160,13 +160,6 @@ nav {
 }
 
 // By Width
-@media screen and (max-width: 1536px) {
-    .pc_background {
-        .wave_bg {
-            height: 85px;
-        }
-    }
-}
 @media screen and (max-width: 1300px) {
     .pc_background {
         .lc_fave_text_img {
@@ -1480,18 +1473,6 @@ nav {
         }
     }
 }
-
-@media screen and (max-width: 1536px) {
-    .sp_area {
-        top: 50px;
-        .section_1 {
-            .main_bg {
-                .main_title {
-                }
-            }
-        }
-    }
-}
 @media screen and (max-width: 600px) {
     .sp_area {
         top: 50px;
@@ -1530,7 +1511,7 @@ nav {
         }
 
         footer {
-            padding: 0 16px 25dvh;
+            padding: 0 16px 13dvh;
         }
     }   
 }
